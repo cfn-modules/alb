@@ -20,7 +20,7 @@ npm i @cfn-modules/alb
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'cfn-modules example'
 Resources:
-  ALB:
+  Alb:
     Type: 'AWS::CloudFormation::Stack'
     Properties:
       Parameters:
@@ -45,7 +45,7 @@ Resources:
     </tr>
   </thead>
   <tbody>
-    tr>
+    <tr>
       <td>VpcModule</td>
       <td>Stack name of <a href="https://www.npmjs.com/package/@cfn-modules/vpc">vpc module</a></td>
       <td></td>
