@@ -1,10 +1,10 @@
 {
   "name": "@cfn-modules/alb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Application load balancer.",
   "author": "Michael Wittig <michael@widdix.de>",
   "license": "Apache-2.0",
-  "keywords": ["cfn-modules", "cfn-modules:ExposeArn", "cfn-modules:ExposeSecurityGroupId", "cfn-modules:ExposeDnsName"],
+  "keywords": ["cfn-modules", "cfn-modules:ExposeArn", "cfn-modules:ExposeSecurityGroupId", "cfn-modules:LoadBalancer"],
   "homepage": "https://github.com/cfn-modules",
   "bugs": {
     "url": "https://github.com/cfn-modules/alb/issues"

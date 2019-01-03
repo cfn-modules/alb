@@ -14,7 +14,7 @@
 # limitations under the License.
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'cfn-modules: ALB'
-# cfn-modules:implements(ExposeArn, ExposeSecurityGroupId, ExposeDnsName)
+# cfn-modules:implements(ExposeArn, ExposeSecurityGroupId, LoadBalancer)
 Parameters:
   VpcModule:
     Description: 'Stack name of vpc module.'
@@ -108,7 +108,7 @@ Outputs:
   ModuleId:
     Value: 'alb'
   ModuleVersion:
-    Value: '1.0.1'
+    Value: '1.0.2'
   StackName:
     Value: !Ref 'AWS::StackName'
   Arn:
