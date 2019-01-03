@@ -1,6 +1,6 @@
 {
   "name": "@cfn-modules/alb",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Application load balancer.",
   "author": "Michael Wittig <michael@widdix.de>",
   "license": "Apache-2.0",

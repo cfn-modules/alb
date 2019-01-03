@@ -108,7 +108,7 @@ Outputs:
   ModuleId:
     Value: 'alb'
   ModuleVersion:
-    Value: '1.0.2'
+    Value: '1.0.3'
   StackName:
     Value: !Ref 'AWS::StackName'
   Arn:
@@ -118,11 +118,11 @@ Outputs:
   CanonicalHostedZoneId:
     Value: !GetAtt LoadBalancer.CanonicalHostedZoneID
     Export:
-      Name: !Sub '${AWS::StackName}-CanonicalHostedZoneID'
+      Name: !Sub '${AWS::StackName}-CanonicalHostedZoneId'
   DnsName:
     Value: !GetAtt 'LoadBalancer.DNSName'
     Export:
-      Name: !Sub '${AWS::StackName}-DNSName'
+      Name: !Sub '${AWS::StackName}-DnsName'
   LoadBalancerFullName:
     Value: !GetAtt 'LoadBalancer.LoadBalancerFullName'
     Export:
