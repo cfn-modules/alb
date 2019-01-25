@@ -26,3 +26,6 @@ Resources:
         VpcModule: !GetAtt 'Vpc.Outputs.StackName'
         BucketModule: !GetAtt 'AccessLogBucket.Outputs.StackName'
       TemplateURL: './node_modules/@cfn-modules/alb/module.yml'
+Outputs:
+  AccessLogBucketName:
+    Value: !GetAtt 'AccessLogBucket.Outputs.Name'
