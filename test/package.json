@@ -1,9 +1,9 @@
 {
   "private": true,
   "dependencies": {
-    "eslint": "5.12.1",
-    "ava": "0.25.0",
-    "@cfn-modules/test": "0.5.0",
+    "eslint": "5.13.0",
+    "ava": "1.2.1",
+    "@cfn-modules/test": "0.5.1",
     "@cfn-modules/vpc": "1.1.0",
     "@cfn-modules/alb": "file:../",
     "@cfn-modules/s3-bucket": "1.2.0"
