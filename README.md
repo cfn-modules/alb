@@ -32,6 +32,20 @@ Resources:
       TemplateURL: './node_modules/@cfn-modules/alb/module.yml'
 ```
 
+## Examples
+
+* [fargate-alb-ambassador-pattern](https://github.com/cfn-modules/docs/tree/master/examples/fargate-alb-ambassador-pattern)
+* [fargate-alb-single-container](https://github.com/cfn-modules/docs/tree/master/examples/fargate-alb-single-container)
+
+## Related modules
+
+* [alb-listener](https://github.com/cfn-modules/alb-listener)
+* [alb-redirect-to-https](https://github.com/cfn-modules/alb-redirect-to-https)
+* [ecs-alb-target](https://github.com/cfn-modules/ecs-alb-target)
+* [fargate-service](https://github.com/cfn-modules/fargate-service)
+* [lb-dns-record](https://github.com/cfn-modules/lb-dns-record)
+* [nlb](https://github.com/cfn-modules/nlb)
+
 ## Parameters
 
 <table>
