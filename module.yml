@@ -87,6 +87,7 @@ Resources:
       Dimensions:
       - Name: LoadBalancer
         Value: !GetAtt 'LoadBalancer.LoadBalancerFullName'
+      TreatMissingData: notBreaching
   RejectedConnectionCountTooHighAlarm:
     Condition: HasAlertingModule
     Type: 'AWS::CloudWatch::Alarm'
@@ -104,11 +105,12 @@ Resources:
       Dimensions:
       - Name: LoadBalancer
         Value: !GetAtt 'LoadBalancer.LoadBalancerFullName'
+      TreatMissingData: notBreaching
 Outputs:
   ModuleId:
     Value: 'alb'
   ModuleVersion:
-    Value: '1.0.3'
+    Value: '1.0.4'
   StackName:
     Value: !Ref 'AWS::StackName'
   Arn:
