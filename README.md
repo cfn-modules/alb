@@ -1,6 +1,3 @@
-[![Build Status](https://travis-ci.org/cfn-modules/alb.svg?branch=master)](https://travis-ci.org/cfn-modules/alb)
-[![NPM version](https://img.shields.io/npm/v/@cfn-modules/alb.svg)](https://www.npmjs.com/package/@cfn-modules/alb)
-
 # cfn-modules: ALB
 
 Application load balancer.
