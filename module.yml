@@ -141,7 +141,4 @@ Outputs:
     Value: !Ref SecurityGroup
     Export:
       Name: !Sub '${AWS::StackName}-SecurityGroupId'
-  IpAddressType:
-    Value: !Ref IpAddressType
-    Export:
-      Name: !Sub '${AWS::StackName}-IpAddressType'
+
