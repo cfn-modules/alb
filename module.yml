@@ -34,6 +34,13 @@ Parameters:
     AllowedValues:
     - 'internet-facing'
     - internal
+  IpAddressType:
+    Description: 'The IP adress type for the load balancer: IPv4 only or Dualstack (IPv4+IPv6)'
+    Type: String
+    Default: 'dualstack'
+    AllowedValues:
+    - 'ipv4'
+    - 'dualstack'
   IdleTimeoutInSeconds:
     Description: 'The idle timeout value, in seconds.'
     Type: Number
@@ -63,6 +70,7 @@ Resources:
       - !If [HasBucketModule, {Key: 'access_logs.s3.prefix', Value: !Ref 'AWS::StackName'}, !Ref 'AWS::NoValue']
       - !If [HasBucketModule, {Key: 'access_logs.s3.bucket', Value: {'Fn::ImportValue': !Sub '${BucketModule}-Name'}}, !Ref 'AWS::NoValue']
       Scheme: !Ref Scheme
+      IpAddressType: !Ref IpAddressType
       SecurityGroups:
       - !Ref SecurityGroup
       Subnets: !If
