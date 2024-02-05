@@ -37,10 +37,10 @@ Parameters:
   IpAddressType:
     Description: 'The IP adress type for the load balancer: IPv4 only or Dualstack (IPv4+IPv6)'
     Type: String
-    Default: 'dualstack'
+    Default: dualstack
     AllowedValues:
-    - 'ipv4'
-    - 'dualstack'
+    - ipv4
+    - dualstack
   IdleTimeoutInSeconds:
     Description: 'The idle timeout value, in seconds.'
     Type: Number
