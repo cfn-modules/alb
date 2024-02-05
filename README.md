@@ -25,6 +25,7 @@ Resources:
         AlertingModule: '' # optional
         BucketModule: '' # optional
         Scheme: 'internet-facing' # optional
+        IpAddressType: 'dualstack' # optional
         IdleTimeoutInSeconds: '60' # optional
       TemplateURL: './node_modules/@cfn-modules/alb/module.yml'
 ```
@@ -83,6 +84,13 @@ Resources:
       <td>internet-facing</td>
       <td>no</td>
       <td>[internet-facing, internal]</td>
+    </tr>
+    <tr>
+      <td>IpAddressType</td>
+      <td>The IP adress type for the load balancer: IPv4 only or Dualstack (IPv4+IPv6)</td>
+      <td>dualstack</td>
+      <td>no</td>
+      <td>[ipv4, dualstack]</td>
     </tr>
     <tr>
       <td>IdleTimeoutInSeconds</td>

@@ -12,6 +12,17 @@ test.serial('defaults', async t => {
   }
 });
 
+test.serial('ipv4', async t => {
+  const stackName = cfntest.stackName();
+  try {
+    t.log(await cfntest.createStack(`${__dirname}/ipv4.yml`, stackName, {}));
+    // what could we test here?
+  } finally {
+    t.log(await cfntest.deleteStack(stackName));
+    t.pass();
+  }
+});
+
 test.serial('access-log', async t => {
   const stackName = cfntest.stackName();
   try {
