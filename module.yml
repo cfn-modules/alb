@@ -141,4 +141,3 @@ Outputs:
     Value: !Ref SecurityGroup
     Export:
       Name: !Sub '${AWS::StackName}-SecurityGroupId'
-
