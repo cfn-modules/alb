@@ -12,10 +12,10 @@ test.serial('defaults', async t => {
   }
 });
 
-test.serial('ipv6', async t => {
+test.serial('ipv4', async t => {
   const stackName = cfntest.stackName();
   try {
-    t.log(await cfntest.createStack(`${__dirname}/ipv6.yml`, stackName, {}));
+    t.log(await cfntest.createStack(`${__dirname}/ipv4.yml`, stackName, {}));
     const outputs = await cfntest.getStackOutputs(stackName);
     t.log(outputs);
     // what could we test here?
