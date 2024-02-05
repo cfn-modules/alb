@@ -16,10 +16,7 @@ test.serial('ipv4', async t => {
   const stackName = cfntest.stackName();
   try {
     t.log(await cfntest.createStack(`${__dirname}/ipv4.yml`, stackName, {}));
-    const outputs = await cfntest.getStackOutputs(stackName);
-    t.log(outputs);
     // what could we test here?
-    await cfntest.emptyBucket(outputs.AccessLogBucketName);
   } finally {
     t.log(await cfntest.deleteStack(stackName));
     t.pass();
