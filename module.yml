@@ -118,7 +118,7 @@ Outputs:
   ModuleId:
     Value: 'alb'
   ModuleVersion:
-    Value: '1.2.0'
+    Value: 's'
   StackName:
     Value: !Ref 'AWS::StackName'
   Arn:
